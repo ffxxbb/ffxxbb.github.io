@@ -4,12 +4,9 @@
   <meta charset="utf-8">
   
   <title>博客搭建记录 | ffxxbb</title>
-  <meta name="author" content="John Doe">
+  <meta name="author" content="ffxxbb">
   
-  <meta name="description" content="1.安装git客户端
-下载msysgit,Github账号与Git客户端需要有一个连接标识，即SSH密钥，通过这个密钥，我们可以在客户端下操作即可获取github服务器上的数据。这个密钥需要使用Git Bash来生成，操作如下：
-
-检查电脑上现有的ssh key:(在c:/users/adminis">
+  <meta name="description" content="你对本页的描述">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -67,6 +64,13 @@
 <p>下载msysgit,<br>Github账号与Git客户端需要有一个连接标识，即SSH密钥，通过这个密钥，我们可以在客户端下操作即可获取github服务器上的数据。这个密钥需要使用Git Bash来生成，操作如下：</p>
 <ul>
 <li>检查电脑上现有的ssh key:(在c:/users/administrator/.ssh)<br><code>$cd ~/.ssh</code><br>如果提示：no suchfile or directory 说明是第一次使用git</li>
+<li>生成新的ssh key<br><code>$ ssh -keygen -t rsa -C &quot;有箱地址@emai.com&quot;</code><br>输入命令后会提示保存的路径，直接回车，就是默认的路径<br>然后提示输入密码，这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入。这个设置是防止别人往你的项目里提交内容。<br>如果看到以下页面，表示成功了，<a id="more"></a>
+</li>
+</ul>
+<h3 id="1-安装git客户端-1">1.安装git客户端</h3>
+<p>下载msysgit,<br>Github账号与Git客户端需要有一个连接标识，即SSH密钥，通过这个密钥，我们可以在客户端下操作即可获取github服务器上的数据。这个密钥需要使用Git Bash来生成，操作如下：</p>
+<ul>
+<li>检查电脑上现有的ssh key:(在c:/users/administrator/.ssh)<br><code>$cd ~/.ssh</code><br>如果提示：no suchfile or directory 说明是第一次使用git</li>
 <li><p>生成新的ssh key<br><code>$ ssh -keygen -t rsa -C &quot;有箱地址@emai.com&quot;</code><br>输入命令后会提示保存的路径，直接回车，就是默认的路径<br>然后提示输入密码，这个密码会在你提交项目时使用，如果为空的话提交项目时则不用输入。这个设置是防止别人往你的项目里提交内容。<br>如果看到以下页面，表示成功了，<br><img src="http://7vil0a.com1.z0.glb.clouddn.com/Image.png?imageView2/2/w/203/h/203&amp;e=1423641067&amp;token=rG0Re0xIjL7ZmU3D-wNL0etTT4AoooYio_2Oo4SR:NC8W0738byPX8vmzvZbzJl2mLMk" alt="此处输入图片的描述"></p>
 </li>
 <li><p>将生成的ssh key 复制到github<br>经过以上操作后，会生成一个目录（.ssh），目录下有三个文件，其中SSH密钥在id_rsa.pub中<br>然后在github页面输入ssh密钥,把id_ras.pub里面的秘钥复制过来就行<br><img src="http://7vil0a.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20150209154655.png?imageView2/2/w/203/h/203&amp;e=1423641927&amp;token=rG0Re0xIjL7ZmU3D-wNL0etTT4AoooYio_2Oo4SR:pzWf6LE-gjF3c1sZhn06oYk97Rc" alt="此处输入图片的描述"></p>
@@ -103,7 +107,17 @@ hexo deploy
     <footer>
       
         
+  
+  <div class="categories">
+    <a href="/categories/博客/">博客</a>
+  </div>
+
         
+  
+  <div class="tags">
+    <a href="/tag/hexo/">hexo</a>
+  </div>
+
         
   <div class="addthis addthis_toolbox addthis_default_style">
     
@@ -159,14 +173,32 @@ hexo deploy
 </div>
 
   
+<div class="widget tag">
+  <h3 class="title">Categories</h3>
+  <ul class="entry">
+  
+    <li><a href="/categories/博客/">博客</a><small>1</small></li>
+  
+  </ul>
+</div>
+
 
   
+<div class="widget tag">
+  <h3 class="title">Tags</h3>
+  <ul class="entry">
+  
+    <li><a href="/tag/hexo/">hexo</a><small>1</small></li>
+  
+  </ul>
+</div>
+
 </aside>
     <div class="clearfix"></div>
   </div>
   <footer id="footer" class="inner"><div class="alignleft">
   
-  &copy; 2015 John Doe
+  &copy; 2015 ffxxbb
   
 </div>
 <div class="clearfix"></div></footer>
